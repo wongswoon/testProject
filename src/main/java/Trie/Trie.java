@@ -24,7 +24,7 @@ public class Trie {
 
     // Returns if the word is in the trie.
     public boolean search(String word) {
-        int res = root.find(word);
+        int res = root.findWithDot(word,0,0);
         return res != -1 && res != 0;
     }
 

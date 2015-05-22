@@ -3,7 +3,7 @@ package Trie;
 /**
  * Created by Lenovo on 15-5-12.
  */
- class TrieNode {
+class TrieNode {
     final static int maxnode = 40000;
     final static int sigma_size = 26;
     // Initialize your data structure here.
@@ -40,6 +40,34 @@ package Trie;
             u = ch[u][c];
         }
         return val[u];
+    }
+
+    int findRescure(String s, int u, int start) {
+        if (start == s.length()) return val[u];
+        int c = idx(s.charAt(start));
+        if (ch[u][c] == 0) return -1;
+        return findRescure(s, ch[u][c], start + 1);
+    }
+
+    int findWithDot(String s, int u, int start) {
+        if (start == s.length()) {
+            return val[u];
+        }
+        if (s.charAt(start) == '.') {
+            for (int j = 0; j < 26; j++) {
+                if (ch[u][j] == 0) continue;
+                int res = findWithDot(s, ch[u][j], start + 1);
+                if (res != -1 && res != 0)
+                    return res;
+            }
+        } else {
+            int c = idx(s.charAt(start));
+            if (ch[u][c] == 0) {
+                return -1;
+            }
+            return findWithDot(s, ch[u][c], start + 1);
+        }
+        return -1;
     }
 
     public TrieNode() {

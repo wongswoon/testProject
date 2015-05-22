@@ -1,9 +1,10 @@
 import Trie.Trie;
-import com.google.common.collect.Lists;
+import com.google.common.collect.*;
 
 import com.sun.org.apache.regexp.internal.recompile;
 import org.omg.PortableInterceptor.INACTIVE;
 
+import java.math.BigInteger;
 import java.util.*;
 
 import org.junit.Test;
@@ -519,7 +520,6 @@ public class LeetcodeTest {
     int f[] = new int[1000];  //完成时间
 
     /**
-     *
      * @param g
      * @param v
      * @return true: is DAG,false : has cycle
@@ -571,8 +571,8 @@ public class LeetcodeTest {
         int tp[] = new int[numCourses];            ////存放拓扑序列1..V
 
 
-        for ( i = 0; i < numCourses; i++)   //按finish的时间倒序存放在tp序列tp中
-            tp[numCourses - f[i] -1] = i;
+        for (i = 0; i < numCourses; i++)   //按finish的时间倒序存放在tp序列tp中
+            tp[numCourses - f[i] - 1] = i;
 
         return tp;
     }
@@ -582,6 +582,74 @@ public class LeetcodeTest {
 
         System.out.println(JsonUtil.toJson(findOrder(2, new int[][]{{0, 1}, {1, 0}})));
 
+    }
+
+    Trie trie = new Trie();
+
+    // Adds a word into the data structure.
+    public void addWord(String word) {
+        trie.insert(word);
+    }
+
+    // Returns if the word is in the data structure. A word could
+    // contain the dot character '.' to represent any one letter.
+    public boolean search(String word) {
+        return trie.search(word);
+    }
+
+    int reverse(int x) {
+        float y = x;
+        if (y - 4294967295f < 1e-10) return x;
+        x = (((x & 0xaaaaaaaa) >> 1) | ((x & 0x55555555) << 1));
+        x = (((x & 0xcccccccc) >> 2) | ((x & 0x33333333) << 2));
+        x = (((x & 0xf0f0f0f0) >> 4) | ((x & 0x0f0f0f0f) << 4));
+        x = (((x & 0xff00ff00) >> 8) | ((x & 0x00ff00ff) << 8));
+        return ((x >> 16) | (x << 16));
+
+    }
+
+    int dp[] = new int[1000];
+
+    public int rob1(int[] nums) {
+        if (nums == null || nums.length < 1) return 0;
+        if (nums.length == 1) return nums[0];
+        dp[0] = nums[0];
+        dp[1] = Math.max(nums[0], nums[1]);
+        for (int i = 2; i < nums.length; i++) {
+            dp[i] = Math.max(dp[i - 1], nums[i] + dp[i - 2]);
+        }
+        return dp[nums.length - 1];
+    }
+    public int rob(int[] nums) {
+        int n = nums.length;
+        if (nums == null || n < 1) return 0;
+
+
+        if (n == 1) return nums[0];
+        if (n == 2) return Math.max(nums[0], nums[1]);
+        if (n == 3) return Math.max(Math.max(nums[0], nums[1]),nums[2]);
+        //if (n == 4)   return Math.max(nums[0]+nums[2], nums[1]+nums[3]);
+        int a[] ,b[];
+        a=Arrays.copyOfRange(nums,1,n-2);
+        b=Arrays.copyOfRange(nums,0,n-1);
+        return Math.max(rob1(a)+nums[n-1], rob1(b));
+
+    }
+
+    @Test
+    public void test9() {
+
+        System.out.println((reverse(1)));
+    }
+
+    @Test
+    public void test10() {
+        Map<Long, String> map = ImmutableMap.of(1l, "aa", 2l, "bb");
+        BiMap<Long, String> biMap = HashBiMap.create();
+        biMap.putAll(map);
+
+        System.out.println(biMap.get(1L));
+        System.out.println(biMap.inverse().get("bb"));
     }
 
 }
