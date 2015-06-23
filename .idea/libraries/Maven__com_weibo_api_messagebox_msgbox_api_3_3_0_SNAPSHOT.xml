@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.weibo.api.messagebox:msgbox_api:3.3.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/weibo/api/messagebox/msgbox_api/3.3.0-SNAPSHOT/msgbox_api-3.3.0-20140903.151257-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/weibo/api/messagebox/msgbox_api/3.3.0-SNAPSHOT/msgbox_api-3.3.0-20140903.151257-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/weibo/api/messagebox/msgbox_api/3.3.0-SNAPSHOT/msgbox_api-3.3.0-20140903.151257-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

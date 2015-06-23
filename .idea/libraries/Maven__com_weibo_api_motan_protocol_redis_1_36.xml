@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.weibo.api:motan-protocol-redis:1.36">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/weibo/api/motan-protocol-redis/1.36/motan-protocol-redis-1.36.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/weibo/api/motan-protocol-redis/1.36/motan-protocol-redis-1.36-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/weibo/api/motan-protocol-redis/1.36/motan-protocol-redis-1.36-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
