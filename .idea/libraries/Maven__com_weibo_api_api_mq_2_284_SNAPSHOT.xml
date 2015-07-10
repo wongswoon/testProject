@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Maven: com.weibo.api:api-mq:2.284-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/weibo/api/api-mq/2.284-SNAPSHOT/api-mq-2.284-20150707.220149-26.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/weibo/api-mq/api-mq-2.284-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/weibo/api/api-mq/2.284-SNAPSHOT/api-mq-2.284-20150707.220149-26-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/weibo/api-mq/api-mq-2.284-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/weibo/api/api-mq/2.284-SNAPSHOT/api-mq-2.284-20150707.220149-26-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.weibo.api:api-statuses:2.178">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/weibo/api/api-statuses/2.178/api-statuses-2.178.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/weibo/api/api-statuses/2.178/api-statuses-2.178-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/weibo/api/api-statuses/2.178/api-statuses-2.178-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

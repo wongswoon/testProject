@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="motan-web:war">
+    <output-path>D:/weibo/motan/motan-web/target</output-path>
+    <root id="archive" name="motan-web.war">
+      <element id="artifact" artifact-name="motan-web:war exploded" />
+    </root>
+  </artifact>
+</component>

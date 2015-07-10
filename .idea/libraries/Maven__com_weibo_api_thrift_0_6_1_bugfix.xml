@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.weibo.api:thrift:0.6.1-bugfix">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/weibo/api/thrift/0.6.1-bugfix/thrift-0.6.1-bugfix.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/weibo/api/thrift/0.6.1-bugfix/thrift-0.6.1-bugfix-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/weibo/api/thrift/0.6.1-bugfix/thrift-0.6.1-bugfix-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
